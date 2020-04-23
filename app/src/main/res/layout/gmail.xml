@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/element"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtBackground"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_shape"
+                android:layout_margin="10dp"
+                android:text="N"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textColor="#FEFF" />
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/check"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/important_check"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Name here"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:text="12:30 PM"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Some description here"/>
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Some text here"/>
+
+                <ImageView
+                    android:id="@+id/image_favorite"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/header"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/star_normal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
